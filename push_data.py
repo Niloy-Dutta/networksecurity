@@ -39,8 +39,8 @@ class NetworkDataExtract():
 
             self.mongo_client = pymongo.MongoClient(MONGO_DB_URL)
             self.database = self.mongo_client[database]
-            self.collcection = self.database[collection]
-            self.collcection.insert_many(self.records)
+            self.collecction = self.database[collection]
+            self.collecction.insert_many(self.records)
             return (len(self.records))
 
         except Exception as e:
